@@ -1,5 +1,5 @@
-import withLayout from '../components/MyLayoutHoc';
+import Layout from '../components/MyLayoutContent';
 
-const Page = () => <p>Hello about.js</p>;
+const page = <p>hello, about</p>
 
-export default withLayout(Page);
+export default () => (<Layout content={page}></Layout>)

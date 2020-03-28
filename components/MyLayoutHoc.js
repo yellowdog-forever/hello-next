@@ -1,3 +1,4 @@
+// Layout.js
 import Header from './Header';
 
 const layoutStyle = {
@@ -6,13 +7,21 @@ const layoutStyle = {
   border: '1px solid #DDD'
 };
 
-const withLayout = Page => {
+// const Layout = Page => (
+//   <div style={layoutStyle}>
+//     <Header />
+//     <Page />
+//   </div>
+// );
+// error: The default export is not a React Component in page: "/"
+
+const Layout = Page => {
   return () => (
     <div style={layoutStyle}>
       <Header />
       <Page />
     </div>
-  );
-};
+  )
+}
 
-export default withLayout;
+export default Layout;
