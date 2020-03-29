@@ -20,7 +20,7 @@ And here's the content.
       `}
         />
       </div>
-      <style jsx>{`
+      <style jsx global>{`
         .markdown {
           font-family: 'Arial';
         }
