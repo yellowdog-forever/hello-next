@@ -17,7 +17,8 @@ const Index = props => (
   </Layout>
 );
 
-Index.getInitialProps = async function() {
+Index.getInitialProps = async function(context) {
+  // console.log("IndexContext", context);
   const res = await fetch('https://api.tvmaze.com/search/shows?q=batman');
   const data = await res.json();
 
