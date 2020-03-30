@@ -7,7 +7,7 @@ function fetcher(url) {
 export default function Index() {
   // const res = useSWR('/api/randomQuote', fetcher);
   // console.log(">>>>>>>>>>", res)
-  const { data, error } = useSWR('/api/randomQuote', fetcher);
+  const { data, error } = useSWR('/api/randomQuote?author=123', fetcher);
   // The following line has optional chaining, added in Next.js v9.1.5,
   // is the same as `data && data.author`
   const author = data?.author;
